@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.background-img {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    padding: 3% 0;
+    width: 100%;
+    display: block;
+    background-color: #FFBF69;
+}
+
+nav .logo {
+    width: 50%;
+    font-size: 2rem;
+    float: left;
+}
+
+.image {
+    width: 100%;
+}
+
+.content .left-side {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    padding: 0 5% 0 5%;
+    color: white;
+}
+
+.left-side h1 {
+    margin-top: 40%;
+    font-size: 7rem;
+    width: 100%;
+    word-spacing: 50px;
+}
+
+.left-side p {
+    margin: 30px 0 20px 0;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+}
+
+.content-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+    background-color: #CBF3F0;
+    border: 0;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.about {
+    padding: 7% 5%;
+}
+
+.about-text {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.options{
+    background-color: #CBF3F0;
+}
+.opt-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .opt-img div {
+    text-align: center;
+    width: 70%;
+    padding: 7% 2% 15% 2%;
+  }
+
+  .opt-img img {
+    width: 50%;
+  }
+
+  .opt-title {
+    padding-top: 100px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .opt-btn{
+    background-color: #FFBF69;
+    border: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-top: 60px;
+  }
+.opt-heading{
+    font-size: 1.5rem;
+    margin-top: 40px;
+    width: 100%;
+}
+.ending{
+    background-image: url(/images/bg-grid.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.ending img{
+    width: 70%;
+    float: right;
+    padding: 25% 15% 0 0 ;
+}
+.end-img{
+    width: 40%;
+    float: right;
+}
+.end-text{
+    width: 60%;
+    float: left;
+}
+.text{
+    padding: 17% 0 0 10%;
+    width: 80%;
+    line-height: 2;
+    text-align: start;
+}
+.text h3{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav .link {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 2rem;
+}
+footer{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    color: white;
+}
+footer span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.link a {
+    color: black;
+    text-decoration: none;
+}
+
+.link a:visited {
+    color: black;
+    text-decoration: none;
+
+}
+
+.link a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo a {
+    margin-left: 30px;
+}
+
+/* .content{
+    margin-top: auto;
+    position: absolute;
+} */
+.slider{
+    width:80%;
+    height:600px;
+
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide-ana{
+    height: 100%;
+    margin-top: 40px;
+}
+.slide-ana div{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slider span{
+    height: 50px;
+    position: absolute;
+    top:50%;
+    margin:-25px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.title{
+    top:80% !important;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    cursor: auto !important;
+    padding: 0 20px;
+}
+.slide-ana{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+#prev{
+    left:0;
+    border-radius: 0 10px 10px 0;
+}
+#next{
+    right:0;
+    border-radius:10px 0 0 10px;
+}
+#prev svg,#next svg{
+    width:100%;
+    fill: #fff;
+}
+#prev:hover,
+#next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
