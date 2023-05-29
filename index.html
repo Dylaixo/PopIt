@@ -6,33 +6,37 @@
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Pop It !</title>
 </head>
 
 <body>
-    <nav id="nav-change">
-        <div class="logo">
-            <a>Logo</a>
+    <nav id="nav-change" class="Navbar">
+        <div class="Navbar__logo">
+            <a class="Navbar__logo__tag">Logo</a>
         </div>
-        <div class="link">
-            <a href="#">Link1</a>
-            <a href="#">Link2</a>
-            <a href="#">Link3</a>
+        <div class="Navbar__link">
+            <a class="Navbar__link__tag" href="#">Link1</a>
+            <a class="Navbar__link__tag" href="#">Link2</a>
+            <a class="Navbar__link__tag" href="#">Link3</a>
         </div>
     </nav>
 
-    <section class="content">
-        <div class='left-side'>
-            <h1>POP IT!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula justo.</p>
-            <button id="content-btn" class="content-btn" onclick="change()">Change to red!</button>
+    <section class="Content">
+        <div class='Content__left-side'>
+            <h1 class="Content__left-side__header">POP IT!</h1>
+            <p class="Content__left-side__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                ut ligula justo.</p>
+            <button id="content-btn" class="Content__left-side__btn" onclick="change()">Change to red!</button>
         </div>
-        <img id="content-img" class="image" src="images/background.png">
+        <img id="content-img" class="Content__image" src="images/background.png">
     </section>
 
-    <section class="about">
-        <h2 class="about-title">What is pop it?</h2>
-        <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula justo. Nam
+    <section class="About">
+        <h2 class="About__title">What is pop it?</h2>
+        <p class="About__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula justo. Nam
             accumsan felis sem,
             rhoncus volutpat metus ornare nec. Donec in efficitur erat. Donec maximus lacinia mattis. Donec consectetur
             malesuada felis, nec elementum dui feugiat non. Donec sollicitudin sem at molestie lacinia. Nulla tempus
@@ -41,51 +45,56 @@
             tempus. Fusce sit amet dolor fermentum leo malesuada tincidunt id et libero.</p>
     </section>
 
-    <section class="options">
-        <h3 class="opt-title">Title</h3>
-        <div class="opt-img">
-            <div class="slider-item">
-                <img src="/images/square.png" alt="">
-                <h3 class="opt-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula
+    <section class="Options">
+        <h3 class="Options__title">Title</h3>
+        <div class="Options__image">
+            <div class="Options__img__container">
+                <img class="Options__img__container__image" src="/images/square.png" alt="Square pop it">
+                <h3 class="Options__img__container__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ut ligula
                     justo.</h3>
-                <button class="opt-btn">click me</button>
+                <button class="Options__img__container__btn">click me</button>
             </div>
-            <div class="center-image">
-                <img src="/images/amongus.png" alt="">
-                <h3 class="opt-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula
+            <div class="Options__img__container">
+                <img class="Options__img__container__image" src="/images/amongus.png" alt="Amongus pop it">
+                <h3 class="Options__img__container__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ut ligula
                     justo.</h3>
-                <button class="opt-btn">click me</button>
+                <button class="Options__img__container__btn">click me</button>
             </div>
-            <div>
-                <img src="/images/round.png" alt="">
-                <h3 class="opt-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula
+            <div class="Options__img__container">
+                <img class="Options__img__container__image" src="/images/round.png" alt="Round pop it">
+                <h3 class="Options__img__container__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ut ligula
                     justo.</h3>
-                <button class="opt-btn">click me</button>
+                <button class="Options__img__container__btn">click me</button>
             </div>
         </div>
     </section>
 
-    <div class="slider">
-        <div class="slide-ana">
-            <div id="1st-slide">
-                <span class="title">Learn many things!</span>
+    <div class="Slider">
+        <div class="Slider__slides slide-ana">
+            <div id="1st-slide" class="Slider__slides__container">
+                <span class="Slider__slides__container__title">Learn many things!</span>
             </div>
-            <div id="2nd-slide">
-                <span class="title">Play together!</span>
+            <div id="2nd-slide" class="Slider__slides__container">
+                <span class="Slider__slides__container__title">Play together!</span>
             </div>
-            <div id="3rd-slide">
-                <span class="title">For every age!</span>
+            <div id="3rd-slide" class="Slider__slides__container">
+                <span class="Slider__slides__container__title">For every age!</span>
             </div>
-            <div id="4th-slide"><span class="title">Diffrent shapes</span></div>
+            <div id="4th-slide" class="Slider__slides__container">
+                <span class="Slider__slides__container__title">Diffrent shapes</span>
+            </div>
         </div>
-        <span class="icon-arrow_back" id="prev"></span>
-        <span class="icon-arrow_forward" id="next"></span>
+        <span class="Slider__icon-arrow_back" id="prev"></span>
+        <span class="Slider__icon-arrow_forward" id="next"></span>
     </div>
 
-    <section id="ending-backgroud" class="ending">
-        <div class="end-text">
-            <div class="text">
-                <h3>Why pop it is so cool?</h3>
+    <section id="ending-backgroud" class="Ending">
+        <div class="Ending__end-text">
+            <div class="Ending__end-text__text">
+                <h3 class="Ending__end-text__text__header">Why pop it is so cool?</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut ligula justo. Nam accumsan
                     felis sem, rhoncus volutpat metus ornare nec. Donec in efficitur erat. Donec maximus lacinia mattis.
                     Donec consectetur malesuada felis, nec elementum dui feugiat non. Donec sollicitudin sem at molestie
@@ -95,16 +104,16 @@
                     tincidunt id et libero.</p>
             </div>
         </div>
-        <div class="end-img">
-            <img src="/images/photo.jpg" alt="">
+        <div class="Ending__end-img">
+            <img class="Ending__end-img__image" src="/images/photo.jpg" alt="">
         </div>
     </section>
 
-    <footer>
-        <span>FooterLink1</span>
-        <span>FooterLink2</span>
-        <span>FooterLink3</span>
-        <span>FooterLink4</span>
+    <footer class="Footer">
+        <span class="Footer__link">FooterLink1</span>
+        <span class="Footer__link">FooterLink2</span>
+        <span class="Footer__link">FooterLink3</span>
+        <span class="Footer__link">FooterLink4</span>
     </footer>
     <script src="script.js"></script>
 </body>
